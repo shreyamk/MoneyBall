@@ -6,4 +6,6 @@ Typically, baseball teams identify talent by scouting which was based on traditi
 
 It's fascinating to see that their analysis was based on linear regression with two features, and not too complex. Simple ideas can lead to powerful outcomes!
 
-Dataset(https://www.kaggle.com/wduckett/moneyball-mlb-stats-19622012) is taken from kaggle.com. Code can be viewed in the moneyball.R file in this repository.
+[Dataset](https://www.kaggle.com/wduckett/moneyball-mlb-stats-19622012) for analysis is taken from kaggle.com. Code can be viewed in the moneyball.R file in this repository.
+
+![Scatter Plot](scatter_plot.PNG)
