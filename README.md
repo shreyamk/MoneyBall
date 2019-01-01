@@ -11,6 +11,18 @@ It's fascinating to see that their analysis was based on linear regression with 
 
 # Analysis
 
+The dataset includes gaming statistics for all MLB teams over different seasons. Important features for our analysis are:
+<ul>
+  <li>RS: Runs scored</li>
+  <li>RA: Runs allowed</li>
+  <li>W: number of wins</li>
+  <li>OBP: On-Base Percentage</li>
+  <li>SLG: Slugging Percentage</li>
+  <li>BA: Batting Average</li>
+  <li>Playoffs: 1, if the team made it to the playoffs</li>
+  <li>OOBP: Opponent's OBP</li>
+  <li>OSLG: Opponent's SLG</li>
+</ul>
 
 ![Team statistics](teamstat.PNG)
 
@@ -20,7 +32,9 @@ Below is a scatter plot of whether a team made it to play-offs vs number of wins
 
 To win 95 games, how many runs do they need to score? The A's did not merely look at runs scored, but also at runs allowed. Run difference = Runs scored - Runs allowed. A linear regression model is created for number of wins based on Run difference.
 
-<b>Regression 1</b>
+<br>
+
+<b>Regression model 1</b>
 
 ![Regression 1](reg_1.PNG)
 
@@ -33,7 +47,9 @@ The A's also used linear regression to find out which batting stats were more im
 
 Regression model is created for all 3 features below - BA, OBP and SLG.
 
-<b>Regression 2</b>
+<br>
+
+<b>Regression model 2</b>
 
 ![Regression 2](reg_2.PNG)
 
@@ -42,7 +58,9 @@ The coefficient for BA is negative which is strange - because it means that team
 
 We remove BA because it is the least significant variable and recreate the regression model.
 
-<b>Regression 3</b>
+<br>
+
+<b>Regression model 3</b>
 
 ![Regression 3](reg_3.PNG)
 
@@ -53,7 +71,9 @@ RS = -811.6 + 2830.7 * OBP + 1517 * SLG
 
 Since eventually we make predictions based on RD, not RS, we need to create a similar regression model for RA.
 
-<b>Regression 4</b>
+<br>
+
+<b>Regression model 4</b>
 
 ![Regression 4](reg_4.PNG)
 
